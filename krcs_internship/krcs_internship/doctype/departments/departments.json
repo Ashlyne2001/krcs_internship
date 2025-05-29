@@ -6,7 +6,10 @@
  "engine": "InnoDB",
  "field_order": [
   "departments_section",
-  "department"
+  "department",
+  "supervisor",
+  "request_form",
+  "project"
  ],
  "fields": [
   {
@@ -19,12 +22,28 @@
    "fieldname": "departments_section",
    "fieldtype": "Section Break",
    "label": "Departments"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Data",
+   "label": "Supervisor"
+  },
+  {
+   "fieldname": "request_form",
+   "fieldtype": "Attach",
+   "label": "Request Form"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Intern Project"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-27 16:12:45.671984",
+ "modified": "2025-05-29 12:10:33.400294",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Departments",

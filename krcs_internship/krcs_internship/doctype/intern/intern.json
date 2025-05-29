@@ -223,7 +223,7 @@
   {
    "fieldname": "end_dte",
    "fieldtype": "Date",
-   "label": "End Dte"
+   "label": "End Date"
   },
   {
    "fieldname": "department",
@@ -265,7 +265,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-27 16:09:09.360930",
+ "modified": "2025-05-28 11:11:18.779272",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Intern",
