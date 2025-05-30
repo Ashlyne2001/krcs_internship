@@ -93,9 +93,11 @@
    "label": "Residential Area"
   },
   {
+   "default": "+254",
    "fieldname": "phone_number",
-   "fieldtype": "Phone",
-   "label": "Phone Number"
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "placeholder": "(+254)"
   },
   {
    "fieldname": "school_and_internship_details_section",
@@ -209,7 +211,7 @@
    "fieldname": "red_cross_location",
    "fieldtype": "Select",
    "label": "Red Cross Location",
-   "options": "\nMombasa\nKwale\nKilifi\nTana River\nLamu\nTaita-Taveta\nGarissa\nWajir\nMandera\nMarsabit\nIsiolo\nMeru\nTharaka-Nithi\nEmbu\nKitui\nMachakos\nMakueni\nNyandarua\nNyeri\nKirinyaga\nMurang\u2019a\nKiambu\nTurkana\nWest Pokot\nSamburu\nTrans Nzoia\nUasin Gishu\nElgeyo-Marakwet\nNandi\nBaringo\nLaikipia\nNakuru\nNarok\nKajiado\nKericho\nBomet\nKakamega\nVihiga\nBungoma\nBusia\nSiaya\nKisumu\nHoma Bay\nMigori\nKisii\nNyamira\nNairobi City\nHeadquarters\nIOMe 001\nIOMe 005"
+   "options": "\nHeadquarters\nIOMe 001\nIOMe 005\nMombasa\nKwale\nKilifi\nTana River\nLamu\nTaita-Taveta\nGarissa\nWajir\nMandera\nMarsabit\nIsiolo\nMeru\nTharaka-Nithi\nEmbu\nKitui\nMachakos\nMakueni\nNyandarua\nNyeri\nKirinyaga\nMurang\u2019a\nKiambu\nTurkana\nWest Pokot\nSamburu\nTrans Nzoia\nUasin Gishu\nElgeyo-Marakwet\nNandi\nBaringo\nLaikipia\nNakuru\nNarok\nKajiado\nKericho\nBomet\nKakamega\nVihiga\nBungoma\nBusia\nSiaya\nKisumu\nHoma Bay\nMigori\nKisii\nNyamira\nNairobi City"
   },
   {
    "fieldname": "internship_duration_section",
@@ -243,13 +245,14 @@
   },
   {
    "fieldname": "lecturers_contact",
-   "fieldtype": "Phone",
-   "label": "Lecturer's Contact"
+   "fieldtype": "Data",
+   "label": "Lecturer's Contact",
+   "placeholder": "+254"
   },
   {
    "fieldname": "volunteer_status",
    "fieldtype": "Select",
-   "label": "Volunteer Status",
+   "label": "Is a Volunteer?",
    "options": "\nYes\nNo"
   },
   {
@@ -265,7 +268,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-28 11:11:18.779272",
+ "modified": "2025-05-30 09:47:01.036914",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Intern",

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:Supervisor-{MM}-{YY}-{###}",
  "creation": "2025-05-26 21:26:03.665739",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -61,6 +62,7 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Email"
   },
   {
@@ -69,8 +71,9 @@
   },
   {
    "fieldname": "phone_number",
-   "fieldtype": "Phone",
-   "label": "Phone Number"
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "placeholder": "+254"
   },
   {
    "fieldname": "location_section",
@@ -79,9 +82,10 @@
   },
   {
    "fieldname": "red_cross_location",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Red Cross Location",
-   "options": "Redcross location"
+   "options": "\nHeadquarters\nIOMe 001\nIOMe 005\nMombasa\nKwale\nKilifi\nTana River\nLamu\nTaita-Taveta\nGarissa\nWajir\nMandera\nMarsabit\nIsiolo\nMeru\nTharaka-Nithi\nEmbu\nKitui\nMachakos\nMakueni\nNyandarua\nNyeri\nKirinyaga\nMurang\u2019a\nKiambu\nTurkana\nWest Pokot\nSamburu\nTrans Nzoia\nUasin Gishu\nElgeyo-Marakwet\nNandi\nBaringo\nLaikipia\nNakuru\nNarok\nKajiado\nKericho\nBomet\nKakamega\nVihiga\nBungoma\nBusia\nSiaya\nKisumu\nHoma Bay\nMigori\nKisii\nNyamira\nNairobi City"
   },
   {
    "fieldname": "column_break_xytn",
@@ -90,6 +94,7 @@
   {
    "fieldname": "department",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Department",
    "options": "Departments"
   }
@@ -97,10 +102,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-26 22:19:11.940406",
+ "modified": "2025-05-30 09:53:48.116491",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Supervisor",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

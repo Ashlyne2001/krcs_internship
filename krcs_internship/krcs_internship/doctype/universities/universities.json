@@ -44,8 +44,9 @@
   },
   {
    "fieldname": "phone_number",
-   "fieldtype": "Phone",
-   "label": "Phone Number"
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "placeholder": "+254"
   },
   {
    "fieldname": "email",
@@ -61,7 +62,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-27 15:11:32.223475",
+ "modified": "2025-05-30 09:55:03.669072",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Universities",
