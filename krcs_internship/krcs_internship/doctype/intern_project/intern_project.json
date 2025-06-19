@@ -70,13 +70,13 @@
    "fieldname": "departments",
    "fieldtype": "Link",
    "label": "Departments",
-   "options": "Departments"
+   "options": "Department"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-27 15:27:46.130580",
+ "modified": "2025-06-19 09:27:08.770415",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Intern Project",

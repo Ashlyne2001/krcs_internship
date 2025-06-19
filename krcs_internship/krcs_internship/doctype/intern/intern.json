@@ -7,17 +7,15 @@
  "engine": "InnoDB",
  "field_order": [
   "personal_details_section",
-  "first_name",
-  "sex",
-  "profile_photo",
-  "column_break_egsk",
-  "last_name",
-  "residential_area",
+  "red_profile",
   "full_name",
-  "section_break_pfoi",
-  "email",
-  "column_break_rqet",
   "phone_number",
+  "email",
+  "column_break_egsk",
+  "residential_area",
+  "county",
+  "gender",
+  "profile_photo",
   "school_and_internship_details_section",
   "course_",
   "universitiescolleges",
@@ -26,9 +24,8 @@
   "lecturers_contact",
   "column_break_ibkr",
   "internship_type",
-  "red_cross_location",
+  "internship_work_station",
   "department",
-  "volunteer_status",
   "internship_duration_section",
   "start_date",
   "column_break_rkep",
@@ -54,38 +51,13 @@
    "label": "Personal Details"
   },
   {
-   "fieldname": "first_name",
-   "fieldtype": "Data",
-   "label": "First Name"
-  },
-  {
-   "fieldname": "sex",
-   "fieldtype": "Select",
-   "label": "Sex",
-   "options": "\nMale\nFemale\nOther"
-  },
-  {
    "fieldname": "column_break_egsk",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "label": "Last Name"
-  },
-  {
-   "fieldname": "section_break_pfoi",
-   "fieldtype": "Section Break",
-   "label": "Contact Info"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
-  },
-  {
-   "fieldname": "column_break_rqet",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "residential_area",
@@ -208,12 +180,6 @@
    "options": "Courses"
   },
   {
-   "fieldname": "red_cross_location",
-   "fieldtype": "Select",
-   "label": "Red Cross Location",
-   "options": "\nHeadquarters\nIOMe 001\nIOMe 005\nMombasa\nKwale\nKilifi\nTana River\nLamu\nTaita-Taveta\nGarissa\nWajir\nMandera\nMarsabit\nIsiolo\nMeru\nTharaka-Nithi\nEmbu\nKitui\nMachakos\nMakueni\nNyandarua\nNyeri\nKirinyaga\nMurang\u2019a\nKiambu\nTurkana\nWest Pokot\nSamburu\nTrans Nzoia\nUasin Gishu\nElgeyo-Marakwet\nNandi\nBaringo\nLaikipia\nNakuru\nNarok\nKajiado\nKericho\nBomet\nKakamega\nVihiga\nBungoma\nBusia\nSiaya\nKisumu\nHoma Bay\nMigori\nKisii\nNyamira\nNairobi City"
-  },
-  {
    "fieldname": "internship_duration_section",
    "fieldtype": "Section Break",
    "label": "Internship Duration"
@@ -231,7 +197,7 @@
    "fieldname": "department",
    "fieldtype": "Link",
    "label": "Department",
-   "options": "Departments"
+   "options": "Department"
   },
   {
    "fieldname": "profile_photo",
@@ -250,12 +216,6 @@
    "placeholder": "+254"
   },
   {
-   "fieldname": "volunteer_status",
-   "fieldtype": "Select",
-   "label": "Is a Volunteer?",
-   "options": "\nYes\nNo"
-  },
-  {
    "fieldname": "skills_and_interests_tab",
    "fieldtype": "Tab Break",
    "label": "Skills and Interests"
@@ -263,12 +223,36 @@
   {
    "fieldname": "column_break_hbqa",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "red_profile",
+   "fieldtype": "Link",
+   "label": "Red Profile",
+   "options": "Red Profile"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Data",
+   "label": "County"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOther"
+  },
+  {
+   "fieldname": "internship_work_station",
+   "fieldtype": "Select",
+   "label": "Work Station",
+   "options": "\nHeadquarters\nIOMe 001\nIOMe 005\nMombasa\nKwale\nKilifi\nTana River\nLamu\nTaita-Taveta\nGarissa\nWajir\nMandera\nMarsabit\nIsiolo\nMeru\nTharaka-Nithi\nEmbu\nKitui\nMachakos\nMakueni\nNyandarua\nNyeri\nKirinyaga\nMurang\u2019a\nKiambu\nTurkana\nWest Pokot\nSamburu\nTrans Nzoia\nUasin Gishu\nElgeyo-Marakwet\nNandi\nBaringo\nLaikipia\nNakuru\nNarok\nKajiado\nKericho\nBomet\nKakamega\nVihiga\nBungoma\nBusia\nSiaya\nKisumu\nHoma Bay\nMigori\nKisii\nNyamira\nNairobi City"
   }
  ],
  "grid_page_length": 50,
+ "image_field": "profile_photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-30 09:47:01.036914",
+ "modified": "2025-06-19 09:29:34.421070",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Intern",
@@ -284,6 +268,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Internship Admin",
    "share": 1,
    "write": 1
   }
