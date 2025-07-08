@@ -1,13 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
+ "autoname": "field:name_of_course",
  "creation": "2025-05-25 19:30:19.339225",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "courses_section",
-  "courses_"
+  "name_of_course",
+  "abbreviation"
  ],
  "fields": [
   {
@@ -16,20 +17,26 @@
    "label": "Courses"
   },
   {
-   "fieldname": "courses_",
-   "fieldtype": "Select",
-   "label": "Courses",
-   "options": "\nBBIT\nBMIT\nComputer Forensics\nComputer Science\nCybersecurity\nDBIT\nEconomics\nFinance\nIT\nMarketing\nProcurement\nTelecommunications"
+   "fieldname": "name_of_course",
+   "fieldtype": "Data",
+   "label": "Name of Course",
+   "options": "\nBBIT\nBMIT\nComputer Forensics\nComputer Science\nCybersecurity\nDBIT\nEconomics\nFinance\nIT\nMarketing\nProcurement\nTelecommunications",
+   "unique": 1
+  },
+  {
+   "fieldname": "abbreviation",
+   "fieldtype": "Data",
+   "label": "Abbreviation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-30 12:33:27.999485",
+ "modified": "2025-07-08 09:57:55.550634",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Courses",
- "naming_rule": "Set by user",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -69,5 +76,6 @@
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "name_of_course"
 }
