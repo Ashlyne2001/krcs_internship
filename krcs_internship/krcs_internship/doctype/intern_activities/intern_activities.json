@@ -1,85 +1,118 @@
 {
- "actions": [],
- "allow_rename": 1,
- "creation": "2025-05-23 16:56:26.219426",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "date_of_task",
-  "task",
-  "project",
-  "lesson",
-  "challenges",
-  "next_steps",
-  "support_needed",
-  "intern"
- ],
- "fields": [
-  {
-   "fieldname": "date_of_task",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Date of Task"
-  },
-  {
-   "fieldname": "task",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Task"
-  },
-  {
-   "fieldname": "project",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Project",
-   "options": "Project"
-  },
-  {
-   "fieldname": "lesson",
-   "fieldtype": "Text Editor",
-   "in_list_view": 1,
-   "label": "Lesson"
-  },
-  {
-   "fieldname": "challenges",
-   "fieldtype": "Text Editor",
-   "in_list_view": 1,
-   "label": "Challenges"
-  },
-  {
-   "fieldname": "next_steps",
-   "fieldtype": "Data",
-   "label": "Next Steps"
-  },
-  {
-   "fieldname": "support_needed",
-   "fieldtype": "Data",
-   "label": "Support Needed"
-  },
-  {
-   "fieldname": "intern",
-   "fieldtype": "Link",
-   "label": "Intern",
-   "options": "Intern",
-   "read_only": 1
-  }
- ],
- "grid_page_length": 50,
- "index_web_pages_for_search": 1,
- "istable": 1,
- "links": [],
- "modified": "2025-06-19 10:45:58.187114",
- "modified_by": "Administrator",
- "module": "Krcs Internship",
- "name": "Intern Activities",
- "owner": "Administrator",
- "permissions": [],
- "row_format": "Dynamic",
- "sort_field": "creation",
- "sort_order": "DESC",
- "states": [],
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "field:task",
+  "creation": "2025-05-23 16:56:26.219426",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "date_of_activities",
+    "activity",
+    "project",
+    "description_of_activity",
+    "skills_acquired",
+    "challenges",
+    "next_steps",
+    "support_needed",
+    "intern"
+  ],
+  "fields": [
+    {
+      "fieldname": "date_of_activities",
+      "fieldtype": "Date",
+      "in_list_view": 1,
+      "label": "Date of Activities"
+    },
+    {
+      "fieldname": "activity",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Activity",
+      "unique": 1
+    },
+    {
+      "fieldname": "description_of_activity",
+      "fieldtype": "Text Editor",
+      "label": "Description of Activity",
+      "max_height": "200px"
+    },
+    {
+      "fieldname": "project",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Project",
+      "options": "Project"
+    },
+    {
+      "fieldname": "skills_acquired",
+      "fieldtype": "Text Editor",
+      "label": "Skills Acquired",
+      "max_height": "200px"
+    },
+    {
+      "fieldname": "challenges",
+      "fieldtype": "Text Editor",
+      "label": "Challenges",
+      "max_height": "200px"
+    },
+    {
+      "fieldname": "next_steps",
+      "fieldtype": "Text Editor",
+      "label": "Next Steps",
+      "max_height": "200px"
+    },
+    {
+      "fieldname": "support_needed",
+      "fieldtype": "Text Editor",
+      "label": "Support Needed",
+      "max_height": "200px"
+    },
+    {
+      "fieldname": "intern",
+      "fieldtype": "Link",
+      "label": "Intern",
+      "options": "Employee"
+    }
+  ],
+  "grid_page_length": 50,
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-07-14 11:19:08.601888",
+  "modified_by": "Administrator",
+  "module": "Krcs Internship",
+  "name": "Intern Activities",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1
+    },
+    {
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Intern",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "row_format": "Dynamic",
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1,
+  "track_seen": 1,
+  "track_views": 1
 }
+
