@@ -1,0 +1,278 @@
+2025-05-23 11:11:39,256 DEBUG cd internship_app && python3 -m venv env
+2025-05-23 11:11:43,055 DEBUG cd internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade pip
+2025-05-23 11:11:47,428 DEBUG cd internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet wheel
+2025-05-23 11:11:51,034 LOG Getting frappe
+2025-05-23 11:11:51,034 DEBUG cd internship_app/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-05-23 11:11:55,838 LOG Installing frappe
+2025-05-23 11:11:55,841 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/frappe 
+2025-05-23 11:16:46,076 DEBUG cd /home/ash/internship_app/apps/frappe && yarn install --check-files
+2025-05-23 11:17:50,820 DEBUG cd internship_app && bench build
+2025-05-23 11:17:50,971 INFO /home/ash/.local/bin/bench build
+2025-05-23 11:18:22,222 LOG setting up backups
+2025-05-23 11:18:22,258 LOG backups were set up
+2025-05-23 11:18:22,258 INFO Bench internship_app initialized
+2025-05-23 11:22:18,157 INFO /home/ash/.local/bin/bench new-site internship.localhost
+2025-05-23 11:24:12,800 INFO /home/ash/.local/bin/bench start
+2025-05-23 11:24:13,308 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-23 11:24:13,343 INFO /home/ash/.local/bin/bench worker
+2025-05-23 11:24:13,364 INFO /home/ash/.local/bin/bench schedule
+2025-05-23 11:24:13,569 INFO /home/ash/.local/bin/bench watch
+2025-05-23 11:37:11,774 INFO /home/ash/.local/bin/bench set-config -g developer_mode true
+2025-05-23 11:37:28,037 INFO /home/ash/.local/bin/bench new-app krcs_internship
+2025-05-23 11:37:28,044 LOG creating new app krcs_internship
+2025-05-23 11:38:16,764 LOG Installing krcs_internship
+2025-05-23 11:38:16,765 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/krcs_internship 
+2025-05-23 11:38:19,723 DEBUG bench build --app krcs_internship
+2025-05-23 11:38:19,879 INFO /home/ash/.local/bin/bench build --app krcs_internship
+2025-05-23 11:38:47,748 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-05-23 11:38:56,145 INFO /home/ash/.local/bin/bench start
+2025-05-23 11:38:56,600 INFO /home/ash/.local/bin/bench schedule
+2025-05-23 11:38:56,633 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-23 11:38:56,665 INFO /home/ash/.local/bin/bench worker
+2025-05-23 11:38:56,718 INFO /home/ash/.local/bin/bench watch
+2025-05-23 12:00:06,144 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-05-23 13:56:10,783 INFO /home/ash/.local/bin/bench start
+2025-05-23 13:56:11,303 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-23 13:56:11,314 INFO /home/ash/.local/bin/bench schedule
+2025-05-23 13:56:11,317 INFO /home/ash/.local/bin/bench watch
+2025-05-23 13:56:11,331 INFO /home/ash/.local/bin/bench worker
+2025-05-24 12:00:01,883 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-05-24 18:00:02,625 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-05-26 12:00:03,890 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-05-27 08:02:40,634 INFO /home/ash/.local/bin/bench get-app erpnext
+2025-05-27 08:02:42,168 LOG Getting erpnext
+2025-05-27 08:02:42,168 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2025-05-27 08:02:48,602 LOG Installing erpnext
+2025-05-27 08:02:48,602 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/erpnext 
+2025-05-27 08:03:43,080 WARNING cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/erpnext  executed with exit code 1
+2025-05-27 08:03:43,080 WARNING /home/ash/.local/bin/bench get-app erpnext executed with exit code 1
+2025-05-27 08:10:28,540 INFO /home/ash/.local/bin/bench get-app erpnext
+2025-05-27 08:10:44,496 LOG Installing erpnext
+2025-05-27 08:10:44,497 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/erpnext 
+2025-05-27 08:11:07,734 DEBUG cd /home/ash/internship_app/apps/erpnext && yarn install --check-files
+2025-05-27 08:11:10,524 DEBUG bench build --app erpnext
+2025-05-27 08:11:10,690 INFO /home/ash/.local/bin/bench build --app erpnext
+2025-05-27 08:12:09,852 INFO /home/ash/.local/bin/bench get-app hrms
+2025-05-27 08:12:10,772 LOG Getting hrms
+2025-05-27 08:12:10,773 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2025-05-27 08:12:23,127 LOG Installing hrms
+2025-05-27 08:12:23,128 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/hrms 
+2025-05-27 08:12:25,832 DEBUG cd /home/ash/internship_app/apps/hrms && yarn install --check-files
+2025-05-27 08:14:56,594 DEBUG bench build --app hrms
+2025-05-27 08:14:56,798 INFO /home/ash/.local/bin/bench build --app hrms
+2025-05-27 08:15:40,572 INFO /home/ash/.local/bin/bench get-app erpnextexexit
+2025-05-27 08:15:42,049 WARNING /home/ash/.local/bin/bench get-app erpnextexexit executed with exit code 1
+2025-05-27 08:20:27,191 INFO /home/ash/.local/bin/bench get-app erpnext
+2025-05-27 08:20:40,474 INFO App moved from apps/erpnext to archived/apps/erpnext-2025-05-27
+2025-05-27 08:20:40,478 LOG Getting erpnext
+2025-05-27 08:20:40,478 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch develop --depth 1 --origin upstream
+2025-05-27 08:20:53,438 LOG Installing erpnext
+2025-05-27 08:20:53,448 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/erpnext 
+2025-05-27 08:20:59,375 DEBUG cd /home/ash/internship_app/apps/erpnext && yarn install --check-files
+2025-05-27 08:21:00,277 DEBUG bench build --app erpnext
+2025-05-27 08:21:00,445 INFO /home/ash/.local/bin/bench build --app erpnext
+2025-05-27 08:30:47,714 INFO /home/ash/.local/bin/bench get-app hrms
+2025-05-27 08:31:07,434 INFO App moved from apps/hrms to archived/apps/hrms-2025-05-27
+2025-05-27 08:31:07,439 LOG Getting hrms
+2025-05-27 08:31:07,440 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git --branch develop --depth 1 --origin upstream
+2025-05-27 08:31:20,364 LOG Installing hrms
+2025-05-27 08:31:20,365 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/hrms 
+2025-05-27 08:31:23,382 DEBUG cd /home/ash/internship_app/apps/hrms && yarn install --check-files
+2025-05-27 08:32:26,727 DEBUG bench build --app hrms
+2025-05-27 08:32:26,892 INFO /home/ash/.local/bin/bench build --app hrms
+2025-05-27 08:36:21,986 INFO /home/ash/.local/bin/bench --site internship.localhost install-app erpnext
+2025-05-27 08:36:51,343 INFO /home/ash/.local/bin/bench --site internship.localhost reinstall
+2025-05-27 08:39:25,888 INFO /home/ash/.local/bin/bench --site internship.localhost install-app erpnext
+2025-05-27 08:42:14,700 INFO /home/ash/.local/bin/bench --site internship.localhost install-app hrms
+2025-05-27 08:44:26,315 INFO /home/ash/.local/bin/bench --site internship.localhost list-apps
+2025-05-27 08:44:34,219 INFO /home/ash/.local/bin/bench --site internship.localhost install-app hrms
+2025-05-27 08:44:42,835 INFO /home/ash/.local/bin/bench start
+2025-05-27 08:44:43,404 INFO /home/ash/.local/bin/bench watch
+2025-05-27 08:44:43,428 INFO /home/ash/.local/bin/bench schedule
+2025-05-27 08:44:43,462 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-27 08:44:43,591 INFO /home/ash/.local/bin/bench worker
+2025-05-27 08:54:21,050 INFO /home/ash/.local/bin/bench get-app education
+2025-05-27 08:54:21,960 LOG Getting education
+2025-05-27 08:54:21,960 DEBUG cd ./apps && git clone https://github.com/frappe/education.git  --depth 1 --origin upstream
+2025-05-27 08:54:38,300 LOG Installing education
+2025-05-27 08:54:38,301 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/education 
+2025-05-27 08:54:46,988 DEBUG cd /home/ash/internship_app/apps/education && yarn install --check-files
+2025-05-27 08:55:28,171 DEBUG bench build --app education
+2025-05-27 08:55:28,327 INFO /home/ash/.local/bin/bench build --app education
+2025-05-27 08:57:16,149 INFO /home/ash/.local/bin/bench --site internship.localhost install-app education
+2025-05-27 08:58:08,319 INFO /home/ash/.local/bin/bench start
+2025-05-27 08:58:08,796 INFO /home/ash/.local/bin/bench watch
+2025-05-27 08:58:08,800 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-27 08:58:08,905 INFO /home/ash/.local/bin/bench worker
+2025-05-27 08:58:08,973 INFO /home/ash/.local/bin/bench schedule
+2025-05-27 09:02:04,265 INFO /home/ash/.local/bin/bench get-app LMS
+2025-05-27 09:02:05,535 LOG Getting LMS
+2025-05-27 09:02:05,537 DEBUG cd ./apps && git clone https://github.com/frappe/LMS.git  --depth 1 --origin upstream
+2025-05-27 09:02:49,913 LOG Installing lms
+2025-05-27 09:02:49,914 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/lms 
+2025-05-27 09:03:04,068 DEBUG cd /home/ash/internship_app/apps/lms && yarn install --check-files
+2025-05-27 09:06:53,478 DEBUG bench build --app lms
+2025-05-27 09:06:53,681 INFO /home/ash/.local/bin/bench build --app lms
+2025-05-27 09:09:26,005 INFO /home/ash/.local/bin/bench --site internship.localhost install-app LMS
+2025-05-27 09:25:46,711 INFO /home/ash/.local/bin/bench get-app Learning Management System
+2025-05-27 09:25:48,376 WARNING /home/ash/.local/bin/bench get-app Learning Management System executed with exit code 1
+2025-05-27 09:27:15,856 INFO /home/ash/.local/bin/bench get-app health
+2025-05-27 09:27:16,864 LOG Getting health
+2025-05-27 09:27:16,865 DEBUG cd ./apps && git clone https://github.com/frappe/health.git  --depth 1 --origin upstream
+2025-05-27 09:27:23,231 LOG Installing healthcare
+2025-05-27 09:27:23,231 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/healthcare 
+2025-05-27 09:27:33,505 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -r ./apps/healthcare/dev-requirements.txt
+2025-05-27 09:27:46,758 DEBUG bench build --app healthcare
+2025-05-27 09:27:46,924 INFO /home/ash/.local/bin/bench build --app healthcare
+2025-05-27 09:28:37,748 INFO /home/ash/.local/bin/bench --site internship.localhost install-app health
+2025-05-27 09:58:58,512 INFO /home/ash/.local/bin/bench start
+2025-05-27 09:58:59,197 INFO /home/ash/.local/bin/bench watch
+2025-05-27 09:58:59,215 INFO /home/ash/.local/bin/bench worker
+2025-05-27 09:58:59,250 INFO /home/ash/.local/bin/bench schedule
+2025-05-27 09:58:59,268 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-27 12:00:02,421 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-05-27 18:00:02,105 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-05-28 08:59:30,104 INFO /home/ash/.local/bin/bench new-app internship
+2025-05-28 08:59:30,129 LOG creating new app internship
+2025-05-28 08:59:38,623 WARNING /home/ash/.local/bin/bench new-app internship executed with exit code 1
+2025-05-28 09:00:12,091 INFO /home/ash/.local/bin/bench start
+2025-05-28 09:00:12,876 INFO /home/ash/.local/bin/bench schedule
+2025-05-28 09:00:12,899 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-28 09:00:12,951 INFO /home/ash/.local/bin/bench worker
+2025-05-28 09:00:13,103 INFO /home/ash/.local/bin/bench watch
+2025-05-28 09:22:03,718 INFO /home/ash/.local/bin/bench new-app internship
+2025-05-28 09:22:03,723 LOG creating new app internship
+2025-05-28 09:25:41,701 INFO /home/ash/.local/bin/bench start
+2025-05-28 09:25:42,290 INFO /home/ash/.local/bin/bench worker
+2025-05-28 09:25:42,340 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-28 09:25:42,375 INFO /home/ash/.local/bin/bench watch
+2025-05-28 09:25:42,482 INFO /home/ash/.local/bin/bench schedule
+2025-05-28 12:00:02,305 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-05-29 12:00:02,166 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-05-29 12:26:35,669 INFO /home/ash/.local/bin/bench --site internship.localhost console
+2025-05-30 08:10:16,373 INFO /home/ash/.local/bin/bench open
+2025-05-30 08:11:29,577 INFO /home/ash/.local/bin/bench start
+2025-05-30 08:11:30,203 INFO /home/ash/.local/bin/bench watch
+2025-05-30 08:11:30,224 INFO /home/ash/.local/bin/bench schedule
+2025-05-30 08:11:30,225 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-05-30 08:11:30,243 INFO /home/ash/.local/bin/bench worker
+2025-05-30 12:00:04,347 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-10 12:00:02,062 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-12 09:07:42,425 INFO /home/ash/.local/bin/bench start
+2025-06-12 09:07:43,832 INFO /home/ash/.local/bin/bench watch
+2025-06-12 09:07:43,936 INFO /home/ash/.local/bin/bench schedule
+2025-06-12 09:07:43,947 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-06-12 09:07:44,115 INFO /home/ash/.local/bin/bench worker
+2025-06-12 12:00:00,937 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-13 00:00:02,350 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-13 12:00:00,906 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-15 12:00:04,729 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-16 12:00:02,090 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-17 12:00:05,105 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-19 12:00:04,568 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-20 12:00:02,020 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-22 12:00:05,795 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-23 00:00:08,375 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-23 06:00:07,968 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-23 12:00:03,312 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-23 18:00:04,419 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-24 12:00:06,568 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-06-27 09:46:40,665 INFO /home/ash/.local/bin/bench start
+2025-06-27 09:46:41,358 INFO /home/ash/.local/bin/bench watch
+2025-06-27 09:46:41,373 INFO /home/ash/.local/bin/bench worker
+2025-06-27 09:46:41,416 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-06-27 09:46:41,465 INFO /home/ash/.local/bin/bench schedule
+2025-06-27 12:00:03,832 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-07-04 12:45:53,663 INFO /home/ash/.local/bin/bench start
+2025-07-04 12:45:54,278 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-04 12:45:54,314 INFO /home/ash/.local/bin/bench worker
+2025-07-04 12:45:54,334 INFO /home/ash/.local/bin/bench schedule
+2025-07-04 12:45:54,336 INFO /home/ash/.local/bin/bench watch
+2025-07-04 12:49:37,348 INFO /home/ash/.local/bin/bench start
+2025-07-04 12:49:38,283 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-04 12:49:38,288 INFO /home/ash/.local/bin/bench worker
+2025-07-04 12:49:38,341 INFO /home/ash/.local/bin/bench schedule
+2025-07-04 12:49:38,370 INFO /home/ash/.local/bin/bench watch
+2025-07-08 12:00:05,086 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-07-09 12:00:02,975 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-07-11 11:20:42,014 INFO /home/ash/.local/bin/bench start
+2025-07-11 11:20:42,888 INFO /home/ash/.local/bin/bench schedule
+2025-07-11 11:20:42,899 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-11 11:20:42,916 INFO /home/ash/.local/bin/bench watch
+2025-07-11 11:20:42,942 INFO /home/ash/.local/bin/bench worker
+2025-07-11 11:38:16,361 INFO /home/ash/.local/bin/bench start
+2025-07-11 11:44:00,350 INFO /home/ash/.local/bin/bench start
+2025-07-11 11:44:31,657 INFO /home/ash/.local/bin/bench start
+2025-07-11 11:47:02,753 INFO /home/ash/.local/bin/bench start
+2025-07-11 11:51:39,838 INFO /home/ash/.local/bin/bench start
+2025-07-11 11:52:05,826 INFO /home/ash/.local/bin/bench start
+2025-07-11 12:00:01,999 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-07-11 12:08:26,585 INFO /home/ash/.local/bin/bench start
+2025-07-11 12:26:55,394 INFO /home/ash/.local/bin/bench start
+2025-07-11 12:32:21,443 INFO /home/ash/.local/bin/bench clear cache
+2025-07-11 12:32:38,204 INFO /home/ash/.local/bin/bench clear-cache
+2025-07-11 12:33:37,582 INFO /home/ash/.local/bin/bench restart
+2025-07-11 12:33:38,502 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-11 12:33:54,842 INFO /home/ash/.local/bin/bench start
+2025-07-11 12:40:07,310 INFO /home/ash/.local/bin/bench start
+2025-07-11 12:40:08,098 INFO /home/ash/.local/bin/bench watch
+2025-07-11 12:40:08,257 INFO /home/ash/.local/bin/bench schedule
+2025-07-11 12:40:08,309 INFO /home/ash/.local/bin/bench worker
+2025-07-11 12:40:08,357 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-11 12:44:49,217 INFO /home/ash/.local/bin/bench start
+2025-07-11 12:44:49,900 INFO /home/ash/.local/bin/bench schedule
+2025-07-11 12:44:49,997 INFO /home/ash/.local/bin/bench watch
+2025-07-11 12:44:50,010 INFO /home/ash/.local/bin/bench worker
+2025-07-11 12:44:50,074 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-11 15:11:56,108 INFO /home/ash/.local/bin/bench start
+2025-07-11 15:11:57,191 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-11 15:11:57,276 INFO /home/ash/.local/bin/bench watch
+2025-07-11 15:11:57,293 INFO /home/ash/.local/bin/bench schedule
+2025-07-11 15:11:57,431 INFO /home/ash/.local/bin/bench worker
+2025-07-14 09:35:22,387 INFO /home/ash/.local/bin/bench start
+2025-07-14 09:35:23,057 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-14 09:35:23,063 INFO /home/ash/.local/bin/bench schedule
+2025-07-14 09:35:23,072 INFO /home/ash/.local/bin/bench watch
+2025-07-14 09:35:23,103 INFO /home/ash/.local/bin/bench worker
+2025-07-14 09:57:33,526 INFO /home/ash/.local/bin/bench migrate
+2025-07-14 09:57:48,803 INFO /home/ash/.local/bin/bench restart
+2025-07-14 09:57:50,091 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-14 09:58:11,771 INFO /home/ash/.local/bin/bench start
+2025-07-14 09:58:12,391 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-14 09:58:12,399 INFO /home/ash/.local/bin/bench schedule
+2025-07-14 09:58:12,451 INFO /home/ash/.local/bin/bench watch
+2025-07-14 09:58:12,472 INFO /home/ash/.local/bin/bench worker
+2025-07-14 10:12:39,973 INFO /home/ash/.local/bin/bench --site your-site-name migrate
+2025-07-14 10:12:42,253 INFO /home/ash/.local/bin/bench --site your-site-name clear-cache
+2025-07-14 10:12:43,594 INFO /home/ash/.local/bin/bench --site your-site-name clear-website-cache
+2025-07-14 10:12:44,776 INFO /home/ash/.local/bin/bench build
+2025-07-14 10:13:44,909 INFO /home/ash/.local/bin/bench --site internship_app migrate
+2025-07-14 10:14:24,047 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-14 10:14:51,678 INFO /home/ash/.local/bin/bench start
+2025-07-14 10:14:52,301 INFO /home/ash/.local/bin/bench schedule
+2025-07-14 10:14:52,334 INFO /home/ash/.local/bin/bench watch
+2025-07-14 10:14:52,359 INFO /home/ash/.local/bin/bench worker
+2025-07-14 10:14:52,406 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-14 10:15:36,183 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-14 10:18:34,662 INFO /home/ash/.local/bin/bench start
+2025-07-14 10:18:35,202 INFO /home/ash/.local/bin/bench schedule
+2025-07-14 10:18:35,347 INFO /home/ash/.local/bin/bench watch
+2025-07-14 10:18:35,384 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-14 10:18:35,422 INFO /home/ash/.local/bin/bench worker
+2025-07-14 10:33:57,281 INFO /home/ash/.local/bin/bench start
+2025-07-14 10:52:22,431 INFO /home/ash/.local/bin/bench build
+2025-07-14 10:56:54,177 INFO /home/ash/.local/bin/bench start
+2025-07-14 10:56:54,908 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-14 10:56:54,929 INFO /home/ash/.local/bin/bench watch
+2025-07-14 10:56:54,930 INFO /home/ash/.local/bin/bench schedule
+2025-07-14 10:56:54,968 INFO /home/ash/.local/bin/bench worker
+2025-07-14 11:03:18,851 INFO /home/ash/.local/bin/bench start
+2025-07-14 11:03:19,411 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-14 11:03:19,535 INFO /home/ash/.local/bin/bench schedule
+2025-07-14 11:03:19,541 INFO /home/ash/.local/bin/bench worker
+2025-07-14 11:03:19,579 INFO /home/ash/.local/bin/bench watch
+2025-07-14 11:31:26,300 INFO /home/ash/.local/bin/bench start
+2025-07-14 11:31:26,916 INFO /home/ash/.local/bin/bench serve --port 8000
+2025-07-14 11:31:27,001 INFO /home/ash/.local/bin/bench worker
+2025-07-14 11:31:27,026 INFO /home/ash/.local/bin/bench watch
+2025-07-14 11:31:27,045 INFO /home/ash/.local/bin/bench schedule

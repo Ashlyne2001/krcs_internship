@@ -1,0 +1,7 @@
+frappe
+education
+erpnext
+hrms
+healthcare
+lms
+krcs_internship

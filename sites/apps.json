@@ -1,0 +1,71 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "16.0.0-dev"
+    },
+    "krcs_internship": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "745c49cc2c1ab975a581210305ac960be7c12343",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "75ae131d81594d9f676b88b67309d22ffcb4f4e1",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "16.0.0-dev"
+    },
+    "hrms": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "72a32c55a85caee8ae0fce3d7ad4eb047f394803",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "16.0.0-dev"
+    },
+    "education": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "64f03fd8b3f659640db2ce1cf353bd6a66d1df2f",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "15.5.0"
+    },
+    "lms": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "3025ea9a7b83098e95c4f7ce7f6811760ffdd39a",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "2.29.0"
+    },
+    "healthcare": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "5e138aa26cef909a48dd440e18cc0158dea47761",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 7,
+        "version": "16.0.0-dev"
+    }
+}
