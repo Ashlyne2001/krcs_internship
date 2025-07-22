@@ -1,8 +1,17 @@
+
+nano courses/courses.json
+nano courses/courses.json
+nano courses/courses.json
+nano courses/courses.json
+nano courses/courses.json
+nano courses/courses.json
+nano courses/courses.json
 {
   "allow_rename": 1,
   "autoname": "field:name_of_course",
   "creation": "2025-05-25 19:30:19.339225",
   "doctype": "DocType",
+  "name": "Courses",
   "engine": "InnoDB",
   "field_order": [
     "courses_section",
