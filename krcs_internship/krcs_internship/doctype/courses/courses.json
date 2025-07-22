@@ -1,11 +1,4 @@
 
-nano courses/courses.json
-nano courses/courses.json
-nano courses/courses.json
-nano courses/courses.json
-nano courses/courses.json
-nano courses/courses.json
-nano courses/courses.json
 {
   "allow_rename": 1,
   "autoname": "field:name_of_course",
