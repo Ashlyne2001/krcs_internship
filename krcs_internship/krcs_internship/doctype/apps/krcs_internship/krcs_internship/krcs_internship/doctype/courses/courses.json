@@ -1,0 +1,30 @@
+{
+  "doctype": "DocType",
+  "name": "Courses",
+  "autoname": "field:name_of_course",
+  "creation": "2025-05-25 19:30:19.339225",
+  "modified": "2025-05-25 19:30:19.339225",
+  "modified_by": "Administrator",
+  "owner": "Administrator",
+  "fields": [
+    {
+      "fieldname": "name_of_course",
+      "fieldtype": "Data",
+      "label": "Name of Course",
+      "reqd": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "allow_rename": 1,
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "istable": 0
+}
